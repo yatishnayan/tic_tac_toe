@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video id="video-bg" autoplay muted loop>
+        <source src="C:\Users\mahar\Downloads\pexels_videos_2759484 (2160p).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h1 class="title">Funky Tic Tac Toe</h1>
+
+    <div id="game-container" class="container">
+        <div class="dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="ring"></div>
+
+        <div id="game-board" class="board">
+            <!-- Each cell of the game board is represented by a div element -->
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+            <div class="cell" onclick="handleCellClick(this)"></div>
+        </div>
+        <div class="info">
+            <p id="player-info">Player's Turn: X</p>
+            <p id="winner-info"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
